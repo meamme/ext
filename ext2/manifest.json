@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+"version": "1.0",
+  "name": "Facebook Theme Changer",
+  "description": "Changes facebook's theme.",
+  "content_scripts": [
+    {
+	"matches": ["https://www.facebook.com/*"],
+      "css": ["injcss.css"],
+      "js": ["injJS.js"]
+    }
+  ],
+  
+  "permissions": [
+    "tabs", "https://www.facebook.com/*"
+  ]
+}
