@@ -1,3 +1,6 @@
+var togbutton;
+function bt(){
+if (togbutton == 0){
 document.body.style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 document.getElementById("blueBarNAXAnchor").style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
 document.getElementById("blueBarDOMInspector").style.backgroundImage = "url('http://i.imgur.com/LmuELPV.jpg')";
@@ -11,3 +14,10 @@ document.getElementById("rightCol").style.background = "#00000000";
 document.getElementById("contentCol").style.background = "#00000000";
 document.getElementById("mainContainer").style.background = "#00000000";
 document.getElementById("contentcontentArea").style.background = "#00000000";
+togbutton = 1;
+  
+} else {
+  togbutton = 0;
+}
+}
+document.getElementById("blueBarNAXAnchor").innerHTML="<button onclick="bt()">hi</button>";
